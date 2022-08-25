@@ -1,0 +1,59 @@
+body {
+background-color: aqua;
+border: solid black;
+display: flex;
+width: 100vw;
+height: 100vw;
+align-content: center;
+justify-content: center;
+
+}
+
+div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+width: 40vw;
+height: 30vw;
+align-items: center;
+
+
+}
+
+.guessNumber {
+margin-bottom: 100px;
+
+
+}
+
+input {
+
+    margin-bottom: 60px;
+
+}
+
+
+.submit {
+
+border-radius: 20px;
+width: 10vw;
+height: 5vw;
+font-size: 20px;
+
+}
+.hint {
+
+    border-radius: 20px;
+    width: 10vw;
+    height: 5vw;
+    font-size: 20px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
