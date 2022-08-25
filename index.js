@@ -6,29 +6,32 @@ game will tell if the number is bigger or smaller
 
 // geting the input
 const inputNum = document.querySelector('input');
-inputNum.append(submit);
+
 //pulling in submut button
 const submit = document.querySelector('.submit');
-
+submit.append(inputNum);
 const h1Header = document.querySelector('.guessNumber');
 
 //asigning input value
-const userValue = inputNum.value;
-//gen random number
-const randomNum = Math.floor(Math.random() * userValue);
-console.log(userValue);
 
+//gen random number
+const userValue = inputNum.value;
+
+const randomNum = Math.floor(Math.random() * userValue);
  //comparing ran to input   
-function compareRanNum () {
+const distanceBetween = 100 - randomNum;
+
+ function compareRanNum () {
    
     
-    if(randomNum == userValue){
+    if(randomNum === randomNum){
 
 console.log("You won!");
 
-}else {
-
-    console.log ("your wrong")
+}
+else if (randomNum > randomNum) {
+    
+    
 }
 }
 
