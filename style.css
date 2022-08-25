@@ -23,6 +23,7 @@ align-items: center;
 
 .guessNumber {
 margin-bottom: 100px;
+margin-top:500px;
 
 
 }
@@ -37,17 +38,17 @@ input {
 .submit {
 
 border-radius: 20px;
-width: 10vw;
-height: 5vw;
-font-size: 20px;
+width: 100vmin;
+height: 15vmin;
+font-size: 5vmin;
 
 }
 .hint {
 
     border-radius: 20px;
-    width: 10vw;
-    height: 5vw;
-    font-size: 20px;
+    width: 100vmin;
+    height: 15vmin;
+    font-size: 5vmin;
 
 }
 
@@ -55,5 +56,6 @@ font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 
 }

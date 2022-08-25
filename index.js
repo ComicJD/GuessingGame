@@ -9,31 +9,47 @@ const inputNum = document.querySelector('input');
 
 //pulling in submut button
 const submit = document.querySelector('.submit');
-submit.append(inputNum);
+
 const h1Header = document.querySelector('.guessNumber');
 
 //asigning input value
 
 //gen random number
-const userValue = inputNum.value;
 
-const randomNum = Math.floor(Math.random() * userValue);
- //comparing ran to input   
-const distanceBetween = 100 - randomNum;
 
- function compareRanNum () {
+    //comparing ran to input   
+ 
    
-    
-    if(randomNum === randomNum){
 
-console.log("You won!");
 
-}
-else if (randomNum > randomNum) {
+ function compareRanNum() {
+    let randomNum = 1 + Math.floor(Math.random() * 100);
     
+    let userValue = inputNum.value;
+    let distanceBetween = Math.abs(randomNum - userValue);
+    console.log(userValue);
+    console.log(randomNum);
+    console.log(distanceBetween);
+    if(userValue == randomNum){
+    h1Header.innerText = "You did it!";
+    return h1Header;
+    }else{
+        if(distanceBetween <= 10){
+        h1Header.innerText = "Getting Hotter!"
+        }else if(distanceBetween <= 25){
+        h1Header.innerText = "Getting Warmer!"
+        }
+        else if(distanceBetween < 50){
+            h1Header.innerText = "Getting Colder!"
+            }
+    }
+
+   
+    // console.log(distanceBetween);
+    // console.log(randomNum);
     
 }
-}
+
 
 submit.addEventListener('click', compareRanNum);
 
